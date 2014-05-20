@@ -1,0 +1,288 @@
+/*
+Theme Name: The USVI Alliance Theme
+Theme URI: http://artcotechs.net/themes/usvialliance
+Author: the Artcotechs team
+Author URI: http://artcotechs.net/
+Description: The 2013 theme for USVI Alliance is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, single styling for post formats on single views, and an optional no-sidebar full-width page template. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, blue, white, one-column, two-columns, right-sidebar, flexible-width, custom-background, featured-images, flexible-header, full-width-template, post-formats
+Text Domain: the_alliance
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/* Splash Page 
+	------------------------ */
+#splash {
+	position:absolute;
+	top: 0;
+	left:0;
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: url(images/backgrounds/background01-1400.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+#splash-page {
+	padding-left: 0;
+	padding-right: 0;
+}
+.summit-preview-wrap {
+	width: 100%;
+	padding: 4em 0;
+	text-align: center;
+}
+.summit-preview-panel {
+}
+.summit-splash {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+.summit-splash img {
+	max-width: 100%;
+}
+.summit-links {
+	margin: 5px auto;
+	overflow: hidden;
+	width: 100%;
+}
+.summit-links a {
+	display: block;
+	float: left;
+	text-decoration: none;
+}
+.summit-links a:nth-child(2) {
+	float: right;
+}
+.summit-links a:hover {
+	opacity: 0.9;
+}
+.summit-links a.eventbrite-link {
+	background: url(images/main/eventbrite.png);
+}
+.summit-links a.moreinfo-link {
+	background: url(images/main/more-info.png);
+	color: #fff;
+	font-size: 24px;
+}
+.summit-splash img {
+}
+.mailchimp-signup-panel {
+	width: 100%;
+	text-align:center;
+}
+.mailchimp-signup-inner {
+	margin: 0 auto; 
+	width: 100%;
+}
+.mailchimp-signup-inner form {
+	/*background: url(images/main/mailchimp.png);
+	background-repeat: no-repeat;*/
+	background-color: #0059c2;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.mailchimp-signup-inner form label {
+	display: none;
+}
+.mailchimp-signup-inner form input[type=text]{
+	float: left;
+	/*background: url(images/search-white.png) no-repeat 10px 6px #003893;*/
+	background: #003893;
+	border: 0 none;
+	border-radius: 16px;
+	color: #fff;
+	letter-spacing: 1px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	-webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
+.mailchimp-signup-inner form input[type=submit]{
+	background: url(images/main/send.png);
+	background-size: contain;
+	float: right;
+	border: none;
+}
+.mailchimp-signup-inner form .error {
+	position: fixed;
+	top: 235px;
+	left: 30%;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 1px 2px 2px #000;
+}
+.coming-soon-splash {
+	width: 100%;
+	margin: 0 auto 10px auto;
+}
+.summit-social-links {
+	width: 100%;
+	margin: 0 auto;
+}
+.summit-social-links a {
+	display: inline-block;
+	padding: 0 3px;
+}
+
+
+
+
+@media (min-width: 768px){
+	.summit-preview-panel {
+		width: 640px;
+		margin: 0 auto;
+	}
+	.summit-links a {
+		width: 314px;
+		height: 61px;
+		line-height: 60px;
+	}
+	.summit-social-links a {
+		width: 23%;
+	}
+	.mailchimp-signup-inner form {
+		background-size: cover;
+		height: 60px;
+	}
+	.mailchimp-signup-inner form input[type=text] {
+		margin-top: 13px;
+		width: 300px;
+		margin-left: 178px;
+		padding-left: 30px;
+	}
+	.mailchimp-signup-inner form input[type=submit] {
+		height: 58px;
+		width: 100px;
+		background-size: contain;
+		margin-right: 2px;
+		margin-top: 1px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.summit-preview-panel {
+		width: 520px;
+		margin: 0 auto;
+	}
+	.summit-links a {
+		width: 254px;
+		height: 49px;
+		line-height: 49px;
+	}
+	.summit-links a.eventbrite-link {
+		background-size: contain;
+	}
+	.summit-social-links a {
+		width: 22%;
+	}
+	.mailchimp-signup-inner form {
+		background-size: cover;
+		height: 60px;
+	}
+	.mailchimp-signup-inner form input[type=text] {
+		margin-top: 15px;
+		width: 245px;
+		margin-left: 140px;
+		padding-left: 30px;
+	}
+	.mailchimp-signup-inner form input[type=submit] {
+		
+		height: 47px;
+		width: 82px;
+		background-size: contain;
+		margin-right: 2px;
+		margin-top: 6px;
+	}
+}
+@media (min-width: 321px) and (max-width: 480px) {
+	.summit-preview-panel {
+		width: 400px;
+		margin: 0 auto;
+	}
+	.summit-links {
+		text-align: center;
+	}
+	.summit-links a {
+		width: 194px;
+		height: 37px;
+		line-height: 30px;
+	}
+	.summit-links a.eventbrite-link {
+		background-size: contain;
+	}
+	.summit-links a:moreinfo-link {
+		float: right;
+	}
+	.summit-social-links a {
+		width: 22%;
+	}
+	.mailchimp-signup-inner form {
+		background-size: cover;
+		height: 60px;
+	}
+	.mailchimp-signup-inner form input[type=text] {
+		margin-top: 15px;
+		width: 130px;
+		margin-left: 140px;
+		padding-left: 30px;
+	}
+	.mailchimp-signup-inner form input[type=submit] {
+		
+		height: 47px;
+		width: 82px;
+		background-size: contain;
+		margin-right: 2px;
+		margin-top: 6px;
+	}
+}
+@media (max-width: 320px) {
+	.summit-preview-panel {
+		width: 300px;
+		margin: 0 auto;
+	}
+	.summit-links a {
+		width: 144px;
+		height: 28px;
+		line-height: 30px;
+	}
+	.summit-links a.eventbrite-link {
+		background-size: contain;
+	}
+	.summit-social-links a {
+		width: 22%;
+	}
+	.mailchimp-signup-inner form {
+		background-size: contain;
+	}
+	.mailchimp-signup-inner form input[type=text] {
+		margin-top: 2px;
+		width: 71px;
+		margin-left: 128px;
+		padding-left: 29px;
+	}
+	.mailchimp-signup-inner form input[type=submit] {
+		height: 29px;
+		width: 51px;
+		background-size: contain;
+		margin-right: 2px;
+		margin-top: 2px;
+	}
+}

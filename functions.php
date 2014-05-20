@@ -15,7 +15,6 @@
  * @return void
  */
 function usvialliance_setup() {
-	
 // register sidebars
 if ( function_exists('register_sidebar') ) {
 		register_sidebar(array(
@@ -118,6 +117,8 @@ if ( function_exists('register_sidebar') ) {
 			'before_widget' => '',
 			'name' => 'Lower Widget 1',
 			'id' => 'lower1',
+			'name' => 'Footer Widget 1',
+			'id' => 'footer1',
 			'after_widget' => '',
 			'before_title' => '<h3>',
 			'after_title' => '</h3>',
@@ -126,6 +127,8 @@ if ( function_exists('register_sidebar') ) {
 			'before_widget' => '',
 			'name' => 'Lower Widget 2',
 			'id' => 'lower2',
+			'name' => 'Footer Widget 2',
+			'id' => 'footer2',
 			'after_widget' => '',
 			'before_title' => '<h3>',
 			'after_title' => '</h3>',
@@ -134,6 +137,8 @@ if ( function_exists('register_sidebar') ) {
 			'before_widget' => '',
 			'name' => 'Lower Widget 3',
 			'id' => 'lower3',
+			'name' => 'Footer Widget 3',
+			'id' => 'footer3',
 			'after_widget' => '',
 			'before_title' => '<h3>',
 			'after_title' => '</h3>',
@@ -142,6 +147,8 @@ if ( function_exists('register_sidebar') ) {
 			'before_widget' => '',
 			'name' => 'Lower Widget 4',
 			'id' => 'lower4',
+			'name' => 'Footer Widget 4',
+			'id' => 'footer4',
 			'after_widget' => '',
 			'before_title' => '<h3>',
 			'after_title' => '</h3>',
